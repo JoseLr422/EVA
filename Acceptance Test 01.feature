@@ -1,14 +1,15 @@
-Feature: HU08 - Recibir noticias diarias
+Feature: HU03 - Escuchar música de mi juventud
 
-    Como usuario interesado en la actualidad, 
-    quiero escuchar un resumen de noticias locales cada mañana 
-    para mantenerme informado.
+    Como amante de la música, 
+    quiero que EVA reproduzca canciones de mi época preferida 
+    para evocar recuerdos positivos.
     
 Scenario Outline: Resumen informativo matutino
-    Given que son las 8:00 AM
-    When EVA dice "Hoy en Lima: clima soleado y festival de música"
-    "Fecha de nacimiento", "Email", "Contraseña" y "Confirmar contraseña"
-    Then el usuario puede pedir más detalles
+
+    Given que el usuario dice "EVA, pon música de los 70"
+    When el sistema reproduce una lista de canciones de esa década
+    Then el usuario puede ajustar el volumen con comandos de voz
+    
 Example: 
-    |Hora              |Ubicación         |Noticias Ofrecidas                   |
-    |8:00 AM           |Lima              |Clima soleado y festival de música   |
+    |Comando del usuario         |Década solicitada  |Música reproducida    |Ajuste de volumen  |
+    |EVA, pon música de los 70   |1970s              |Lista de los 70s      |Subir volumen      |
