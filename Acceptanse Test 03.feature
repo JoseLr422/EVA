@@ -11,6 +11,5 @@ Scenario Outline: Visualización de alerta urgente
     Then el cuidador asigna la tarea a un colega en menos de 5 minutos
 
 Example: 
-    |Campo               |Datos ingresados         |
-    |Nombre              |Daniel                   |
-    |Edad                |22                       |
+    |Frase detectada     |Nivel de alerta   |Tiempo de reacción    |
+    |Quiero desaparecer  |Alta (roja)       |4 minutos             |
