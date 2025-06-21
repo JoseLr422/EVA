@@ -1,4 +1,4 @@
-Feature: HS - Recibir noticias diarias
+Feature: HU08 - Recibir noticias diarias
 
     Como usuario interesado en la actualidad, 
     quiero escuchar un resumen de noticias locales cada mañana 
